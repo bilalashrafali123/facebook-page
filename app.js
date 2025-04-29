@@ -6,7 +6,7 @@ let uservalue = username.value
 let passvalue = passkey.value;
 
 if(uservalue == "" && passvalue == ""){
-    alert("please enter useername and password first")
+    alert("Please Enter the Required Information....")
 }
 if(uservalue == "admin" && passvalue == "admin"){
     alert("login succesfully")
