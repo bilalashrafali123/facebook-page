@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   background-color: #f4f4f4e9;
-
 }
 
 /* Header Styling Started */
@@ -15,11 +14,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; 
+  min-height: 90vh;
   padding: 20px;
-
-
-
 }
 
 .left {
@@ -30,8 +26,7 @@ body {
 .left h1 {
   color: #1877f2;
   font-size: 60px;
-
- }
+}
 
 .create:hover{
   background-color: #36a420;
@@ -144,11 +139,15 @@ body {
     align-items: center;
    
   }
+     
+
+  
 
   .left {
     margin-right: 0;
     margin-bottom: 30px;
     text-align: center;
+    
    
   }
 }
