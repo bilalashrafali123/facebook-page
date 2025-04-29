@@ -5,7 +5,7 @@
 body {
   margin: 0;
   /* width: 980px; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   background-color: #f4f4f4e9;
 }
 
@@ -16,7 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh; 
-   padding: 20px;
+  padding: 20px;
+
 
 }
 
@@ -135,12 +136,14 @@ body {
   .container {
     flex-direction: column;
     align-items: center;
+   
   }
 
   .left {
     margin-right: 0;
     margin-bottom: 30px;
     text-align: center;
+   
   }
 }
 
@@ -174,7 +177,7 @@ body {
 
 .flex h5 {
   margin: 5px 10px;
-  white-space: nowrap;
+
 }
 
 .hover h5 a {
@@ -202,13 +205,17 @@ hr {
   .flex {
     justify-content: center;
     text-align: center;
-  }
+    margin-right: 20%;
+    
+}
 }
 
 @media (max-width: 480px) {
   .flex h5 {
-    /* flex: 1 1 100%; */
+    flex: 1 1;
     text-align: center;
+    margin-right: 20px;
+    
   }
 }
 
