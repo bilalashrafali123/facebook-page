@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  /* width: 980px; */
   font-family: Helvetica, Arial, sans-serif;
   background-color: #f4f4f4e9;
 
@@ -53,7 +52,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 396px;
+  width: 390px;
   box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(28, 28, 28, 0.1) 0px 8px 16px 0px;
 }
 
@@ -115,12 +114,14 @@ body {
   margin: 20px;
   font-size: 14px;
   color: #1c1e21;
+  
 }
 
 .create-page a {
-  font-weight: bold;
+  font-weight: bolder;
   text-decoration: none;
   color: #000;
+  
 }
 
 .create-page a:hover {
@@ -175,8 +176,8 @@ body {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 10px;
+  /* gap: 2px; */
+  /* margin-bottom: 10px; */
 }
 
 .flex h5 {
@@ -200,7 +201,7 @@ body {
 .footer hr {
   margin: 10px ;
   border-top:1px solid rgba(195, 195, 195, 0.592);
-  width: 83%;
+  width: 77%;
   margin : 0 0 0 8px
 
 }
