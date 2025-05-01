@@ -1,222 +1,201 @@
-/* body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(232, 232, 232);
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-.logo-section {
-  
-  font-size: 30px;
-
- color:rgb(70, 70, 255);
-
-}
-
-.logo-section h1{
-    font-size: 60px;
-    display: block;
-}
-
-
-.form-section input{
-    width: 90%;
-    padding: 14px 16px;
-    margin-bottom: 12px;
-    border: 1px solid #dddfe2;
-    border-radius: 6px;
-    font-size: 17px;
-}
-
-
-
-.form-section{
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 390px;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(42, 42, 42, 0.1) 0px 8px 16px 0px;
-    margin-left:px;
-    
-}
-
-.forgot-password{
-    display: block;
-    text-align: center;
-    margin: 16px 0;
-    color: #1877f2;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.create-new-account-btn{
-    width: 60%;
-    margin-left: 63px;
-    background-color: #42b72a;
-    color: #fff;
-    font-size: 17px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-
-}
-
-.create-page{
-  text-align: center;
-  margin: 20px;
-  font-size: 14px;
-  color: #1c1e21;
-}
-
-.login-btn{
-  width: 100%;;
-  background-color: #1877f2;
-  color: #fff;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-
-.content-wrapper{
-   
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 13%; 
-    gap: 90px;
-
-   
-}
-
-
- */
-
-
-
- body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(232, 232, 232);
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+.content-wrap {
+    display: flex;
+    align-items: center;
+}
 
 .content-wrapper {
+    padding: 0 15px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-     gap: 10px;
-    flex-wrap: wrap; 
-     height: 100vh;
+    background: #f0f2f5;
 }
 
-
-.logo-section {
-    color: rgb(70, 70, 255);
-    font-size: 30px;
-    /* max-width: 400px; */
+.form {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.logo-section h1 {
-    font-size: 60px;
+.form h1 {
+    color: #1877f2;
+    font-size: 4rem;
     margin-bottom: 10px;
 }
 
-.logo-section p {
-    font-size: 20px;
+.form p {
+    font-size: 1.5rem;
+    white-space: nowrap;
 }
 
-
-.form-section {
+form {
+    display: flex;
+    flex-direction: column;
     background: #fff;
-    padding: 20px;
     border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
     width: 100%;
-    max-width: 390px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px,
-                rgba(42, 42, 42, 0.1) 0px 8px 16px;
 }
 
-.form-section input {
-    width: 90%;
-    padding: 14px 16px;
-    margin-bottom: 12px;
-    border: 1px solid #dddfe2;
+form input {
+    height: 55px;
+    width: 100%;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 17px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1877f2;
 }
 
 .login-btn {
-    width: 100%;
-    background-color: #1877f2;
-    color: #fff;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
 }
 
-.forgot-password {
-    display: block;
-    text-align: center;
-    margin: 16px 0;
-    color: #1877f2;
-    font-size: 14px;
+.login-btn .login {
+    border: none;
+    cursor: pointer;
+    background: #1877f2;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+form a {
     text-decoration: none;
 }
 
-.create-new-account-btn {
-    width: 60%;
-    margin: 0 auto;
-    background-color: #42b72a;
-    color: #fff;
-    font-size: 17px;
+.login-btn .forgot_anchor_tag {
+    color: #1877f2;
+    font-size: 0.875rem;
+}
+
+.login-btn .forgot_anchor_tag:hover {
+    text-decoration: underline;
+}
+
+hr {
     border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.button {
+    margin: 25px 0 20px;
+    text-align: center;
+}
+
+.button a {
+    padding: 15px 20px;
+    background: #42b72a;
     border-radius: 6px;
-    cursor: pointer;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.button a:hover {
+    background: #3ba626;
+}
+
+.footer-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 20px;
 }
 
-.create-page {
-    text-align: center;
-    margin: 20px;
-    font-size: 14px;
-    color: #1c1e21;
+.footer-languages {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-@media screen and (max-width: 770px) {
-    .content-wrapper {
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 8px 0;
+    margin-left: 3vh;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer ol li {
+    padding-right: 20px;
+    font-size: 12px;
+    color: #8a8d91;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #8a8d91;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 12px;
+    color: #8a8d91;
+    margin-left: 3vh;
+}
+
+.plus-btn {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 12px;
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    .form {
         flex-direction: column;
-        align-items: center;
-        gap: 40px;
-       
-    }
-
-    .logo-section {
         text-align: center;
     }
+}
 
-    .logo-section h1 {
-        font-size: 70px;
+@media (max-width: 460px) {
+    .form h1 {
+        font-size: 3.5rem;
     }
 
-    .logo-section p {
-        font-size: 18px;
+    .form p {
+        font-size: 1.3rem;
     }
 
-    .form-section {
-        width: 90%;
+    form {
+        padding: 15px;
     }
-     
-
 }
